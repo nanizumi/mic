@@ -11,3 +11,6 @@ echo "accounts ui bootstrap dropdown..."
 mrt add accounts-ui-bootstrap-dropdown
 echo "accounts password..."
 mrt add accounts-password
+
+echo "removing insecure package..."
+meteor remove insecure
