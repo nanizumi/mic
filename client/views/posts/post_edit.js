@@ -1,11 +1,11 @@
 /**
  * Created by vagrant on 6/18/14.
  */
-//Template.postEdit.helpers ({
-//  post: function () {
-//    return Posts.findOne (Session.get ('currentPostId'));
-//  }
-//});
+Template.postEdit.helpers ({
+  post: function () {
+    return Posts.findOne (this._id);
+  }
+});
 
 Template.postEdit.events ({
   'submit form': function (e) {
