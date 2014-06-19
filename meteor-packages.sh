@@ -14,3 +14,6 @@ mrt add accounts-password
 
 echo "removing insecure package..."
 meteor remove insecure
+
+echo "add meteorErrors custom package..."
+meteor add errors
