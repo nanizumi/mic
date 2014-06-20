@@ -27,6 +27,12 @@ if (Posts.find().count() === 0) {
     'password'  : '123123' //encrypted automatically
   });
 
+  Accounts.createUser({
+    'username'  : 'test2',
+    'email'     : 'test2@home.com',
+    'password'  : '123123' //encrypted automatically
+  });
+
   //Accounts.setPassword(testId, '123123');
 
   //var test_usr = Meteor.users.findOne(testId);
