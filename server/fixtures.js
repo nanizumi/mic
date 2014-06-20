@@ -12,6 +12,26 @@ if (Posts.find().count() === 0) {
   });
   var sacha = Meteor.users.findOne(sachaId);
 
+//  var testId = Meteor.users.insert({
+//    profile: { name: 'test'}
+//  });
+  Accounts.createUser({
+    'username'  : 'John Doe',
+    'email'     : 'john@doe.com',
+    'password'  : 'abc123' //encrypted automatically
+  });
+
+  Accounts.createUser({
+    'username'  : 'test',
+    'email'     : 'test@home.com',
+    'password'  : '123123' //encrypted automatically
+  });
+
+  //Accounts.setPassword(testId, '123123');
+
+  //var test_usr = Meteor.users.findOne(testId);
+
+
   var telescopeId = Posts.insert({
     title: 'Introducing Telescope',
     id: sacha._id,
