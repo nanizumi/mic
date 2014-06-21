@@ -17,3 +17,6 @@ meteor remove insecure
 
 echo "add meteorErrors custom package..."
 meteor add errors
+
+echo "add iron-router-progress"
+mrt add iron-router-progress
